@@ -13,33 +13,6 @@ export function saveData(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-// Add starter books and the two demo accounts without deleting existing user data.
-export function seedData() {
-  if (!localStorage.getItem('books')) {
-    saveData('books', [
-      {
-        title: 'Things Fall Apart',
-        author: 'Chinua Achebe',
-        genre: 'Fiction',
-        isbn: '9780385474542',
-        quantity: 4,
-      },
-      {
-        title: 'The River Between',
-        author: 'Ngũgĩ wa Thiong’o',
-        genre: 'Classic',
-        isbn: '9780435905484',
-        quantity: 1,
-      },
-      {
-        title: 'Born a Crime',
-        author: 'Trevor Noah',
-        genre: 'Memoir',
-        isbn: '9780399588198',
-        quantity: 3,
-      },
-    ]);
-  }
 
   const savedUsers = readData('users', []);
   const demoAccounts = [
