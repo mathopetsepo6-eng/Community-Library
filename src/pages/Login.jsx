@@ -53,9 +53,9 @@ function Login({ onLogin }) {
           {/* Display demo IDs so the lecturer can test each role easily. */}
           <div className="demo-accounts">
             <h3>Demo Accounts</h3>
-            <p><strong>Librarian ID:</strong> LIB001</p>
-            <p><strong>Member ID:</strong> MEM001</p>
-            <p>Enter an ID only. No password is required.</p>
+            <p><strong>Librarian ID:</strong> ADMIN1</p>
+            <p><strong>Member ID:</strong> USER1</p>
+            <p>Enter an ID only.</p>
           </div>
 
           <p className="login-footer">Mofolo 2 Library Management System</p>
