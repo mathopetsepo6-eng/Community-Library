@@ -14,8 +14,8 @@ export function saveData(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-// Initialize demo accounts and transactions.
-export function initializeStorage() {
+// Initialize demo accounts and transactions without adding default books.
+export function seedData() {
   const savedUsers = readData('users', []);
 
   const demoAccounts = [
@@ -33,7 +33,7 @@ export function initializeStorage() {
     },
   ];
 
-  // Refresh demo credentials while preserving other registered users.
+  // Preserve registered users and refresh the demo accounts.
   const usersWithDemoAccounts = [...savedUsers];
 
   demoAccounts.forEach((demoAccount) => {
@@ -58,4 +58,14 @@ export function initializeStorage() {
   if (!localStorage.getItem('transactions')) {
     saveData('transactions', []);
   }
+
+  // Do not seed books. The books list starts empty if no books are saved.
+  if (!localStorage.getItem('books')) {
+    saveData('books', []);
+  }
 }
+
+
+
+
+```
