@@ -22,7 +22,7 @@ function Login({ onLogin }) {
     <div className="login-page">
       <div className="login-card">
         <div className="login-header">
-          <h1>Mofolo 2 Library</h1>
+          <h1>Community library Library</h1>
           <p>Library Management System</p>
         </div>
 
@@ -58,7 +58,7 @@ function Login({ onLogin }) {
             <p>Enter an ID only.</p>
           </div>
 
-          <p className="login-footer">Mofolo 2 Library Management System</p>
+          <p className="login-footer">Community library Library Management System</p>
         </div>
       </div>
     </div>
