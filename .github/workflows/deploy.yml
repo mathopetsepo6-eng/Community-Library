@@ -35,7 +35,7 @@ jobs:
           chmod +x node_modules/.bin/vite
 
       - name: Build React website
-        run: npm run build -- --base=/mofolo-2-library/
+        run: npm run build -- --base=/Community-Library/
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
