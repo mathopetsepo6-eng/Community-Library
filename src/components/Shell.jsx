@@ -5,7 +5,7 @@ function Shell({ user, onLogout, children }) {
   return (
     <>
       <nav className="navbar">
-        <div className="logo">Mofolo 2 Library</div>
+        <div className="logo">Community library</div>
         <div className="nav-links">
           <NavLink to="/dashboard">Dashboard</NavLink>
           <NavLink to="/books">Books</NavLink>
