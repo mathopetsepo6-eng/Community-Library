@@ -45,13 +45,13 @@ export function seedData() {
   const demoAccounts = [
     {
       name: 'Demo Librarian',
-      membershipId: 'LIB001',
+      membershipId: 'ADMIN1',
       role: 'Librarian',
       password: '',
     },
     {
       name: 'Demo Member',
-      membershipId: 'MEM001',
+      membershipId: 'USER1',
       role: 'Member',
       password: '',
     },
