@@ -1,4 +1,4 @@
-# Mofolo 2 Library Management System
+# Community library Management System
 
 A React-based library management application. It uses React components and hooks, React Router, controlled forms, and browser `localStorage` to keep book, user, and transaction data between refreshes.
 
