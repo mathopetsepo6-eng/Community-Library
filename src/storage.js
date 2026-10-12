@@ -1,4 +1,4 @@
-```javascript
+
 // Read saved data from the browser. Return the fallback if no valid data exists.
 export function readData(key, fallback) {
   try {
@@ -59,4 +59,3 @@ export function initializeStorage() {
     saveData('transactions', []);
   }
 }
-```
