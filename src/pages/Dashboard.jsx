@@ -10,7 +10,7 @@ function Dashboard({ books, transactions, user }) {
         <div>
           <h1>Library Dashboard</h1>
           <p>
-            Welcome to Mofolo 2 Library. Browse books, check library information, and view
+            Welcome to Community library Library. Browse books, check library information, and view
             transactions from one place.
           </p>
         </div>
@@ -59,7 +59,7 @@ function Dashboard({ books, transactions, user }) {
         <div className="dashboard-panel library-info">
           <div className="panel-header">
             <h2>Library Information</h2>
-            <p>Mofolo 2 Library</p>
+            <p>Community library Library</p>
           </div>
           <div className="info-item">
             <span>Location</span>
