@@ -1,3 +1,4 @@
+```javascript
 // Read saved data from the browser. Return the fallback if no valid data exists.
 export function readData(key, fallback) {
   try {
@@ -13,8 +14,10 @@ export function saveData(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-
+// Initialize demo accounts and transactions.
+export function initializeStorage() {
   const savedUsers = readData('users', []);
+
   const demoAccounts = [
     {
       name: 'Demo Librarian',
@@ -30,11 +33,14 @@ export function saveData(key, value) {
     },
   ];
 
-  // Refresh the demo credentials but preserve any other registered users.
+  // Refresh demo credentials while preserving other registered users.
   const usersWithDemoAccounts = [...savedUsers];
+
   demoAccounts.forEach((demoAccount) => {
     const existingIndex = usersWithDemoAccounts.findIndex(
-      (user) => String(user.membershipId ?? '').toLowerCase() === demoAccount.membershipId.toLowerCase(),
+      (user) =>
+        String(user.membershipId ?? '').toLowerCase() ===
+        demoAccount.membershipId.toLowerCase(),
     );
 
     if (existingIndex === -1) {
@@ -46,9 +52,11 @@ export function saveData(key, value) {
       };
     }
   });
+
   saveData('users', usersWithDemoAccounts);
 
   if (!localStorage.getItem('transactions')) {
     saveData('transactions', []);
   }
 }
+```
